@@ -18436,6 +18436,11 @@ a.pswp__share--download:hover {
 .u-repeater-item {
   display: flex;
   position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 10%;
+  margin: 16px;
 }
 .u-list-control {
   display: flex;
