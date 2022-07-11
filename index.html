@@ -1979,7 +1979,7 @@
     <style class="u-style">
         .u-section-9 {
             background-image: none;
-            min-height: 982px;
+            min-height: 882px;
         }
 
         .u-section-9 .u-shape-1 {
@@ -2206,6 +2206,26 @@
             font-weight: 700;
         }
 
+        #tech-logos {
+            position: absolute;
+        }
+
+        #contact-grid {
+            grid-template-columns: repeat(3, calc(33% - 32px));
+        }
+
+        @media (max-width: 767px) {
+            #contact-grid {
+                grid-template-columns: repeat(1, 100%);
+            }
+        }
+
+        @media (max-width: 1080px) {
+            #tech-logos {
+                position: relative;
+            }
+        }
+
         @media (max-width: 1199px) {
             .u-section-9 {
                 min-height: 902px;
@@ -2262,7 +2282,7 @@
 
         @media (max-width: 991px) {
             .u-section-9 {
-                min-height: 1177px;
+                min-height: 877px;
             }
 
             .u-section-9 .u-shape-1 {
@@ -2324,7 +2344,7 @@
 
         @media (max-width: 767px) {
             .u-section-9 {
-                min-height: 1560px;
+                min-height: 1360px;
             }
 
             .u-section-9 .u-shape-1 {
@@ -2374,7 +2394,7 @@
 
         @media (max-width: 575px) {
             .u-section-9 {
-                min-height: 2091px;
+                min-height: 1491px;
             }
 
             .u-section-9 .u-shape-1 {
@@ -2527,7 +2547,7 @@
                     </div>
                 </div>
             </div>
-            <div style="position: absolute; bottom:0; right:0"
+            <div id="tech-logos" style="bottom:0; right:0"
                 class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-list u-list-1">
                 <div class="u-repeater u-repeater-1">
                     <div class="u-container-style u-list-item u-repeater-item">
@@ -2695,10 +2715,9 @@
         </div>
     </section>
     <section class="u-clearfix u-palette-1-base u-section-9" id="carousel_87c6">
-        <div class="u-shape u-shape-rectangle u-white u-shape-1"></div>
+        <div style="width: 100%" class="u-shape u-shape-rectangle u-white u-shape-1"></div>
         <div class="u-list u-list-1">
-            <div style="grid-gap: 44px;grid-template-columns: repeat(3, calc(33% - 32px));min-height:350px"
-                class="u-repeater u-repeater-1">
+            <div id="contact-grid" style="grid-gap: 44px;min-height:350px" class="u-repeater u-repeater-1">
                 <div
                     class="u-align-center u-container-style u-list-item u-palette-1-light-3 u-radius-10 u-repeater-item u-shape-round u-list-item-1">
                     <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1"><span
@@ -2786,14 +2805,14 @@
             <div class="u-layout">
                 <div style="display: flex; justify-content: center;" class="u-layout-row">
                     <div class="u-align-center u-container-style u-layout-cell u-size-30 u-layout-cell-1">
-                        <div class="u-container-layout u-container-layout-5">
+                        <div style="padding: 0; padding-top: 30px;" class="u-container-layout u-container-layout-5">
                             <h3 style="display: inline-block;" class="u-text u-text-default u-text-9">Get in touch</h3>
                             <h6 class="u-custom-font u-text u-text-font u-text-10">We're here to help when you need
                                 smart solutions to your most tough questions.</h6>
                             <p class="u-text u-text-11">We're only a phone call or email away, and we will love to
                                 assist you.</p>
-                            <div style="margin: 40px auto;" class="u-social-icons u-spacing-20 u-social-icons-1">
-                                <a class="u-social-url" target="_blank"
+                            <div style="margin: 40px auto; display: flex; justify-content: center;align-items: center;">
+                                <a style="flex: initial;margin-right: 16px" class="u-social-url" target="_blank"
                                     href="https://www.facebook.com/SimpleStack-Technologies-107970855288834">
                                     <span style="width: 42px;"
                                         class="u-icon u-icon-circle u-social-facebook u-social-icon u-icon-5">
@@ -2808,7 +2827,8 @@
                                         </svg>
                                     </span>
                                 </a>
-                                <a class="u-social-url" target="_blank" href="https://www.linkedin.com/in/simplestack-technologies-643783225/">
+                                <a style="flex: initial;margin-left: 16px" class="u-social-url" target="_blank"
+                                    href="https://www.linkedin.com/in/simplestack-technologies-643783225/">
                                     <span style="width: 42px;"
                                         class="u-icon u-icon-circle u-social-icon u-social-linkedin u-icon-8">
                                         <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice"
